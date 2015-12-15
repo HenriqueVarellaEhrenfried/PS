@@ -12,31 +12,24 @@ public class Aluno extends Usuario {
 	public Aluno() {
 	}
 
-	/**
-	 * 
-	 */
-	private Integer TEMPODEV = 15;
+	private int TEMPODEV = 15;
+	private int MAXOBRAS = 2;
 
 	/**
-	 * 
+	 * @param senha
+	 * @return 
 	 */
-	private Integer MAXOBRAS = 2;
-
-	/**
-	 * @param senha 
-	 * @return
-	 */
-	public String validaSenha(String senha) {
+	public boolean validaSenha(String senha) {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 	/**
 	 * @return
 	 */
-	public String validaNumeroEmprestimo() {
+	public boolean validaNumeroEmprestimo() {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 }

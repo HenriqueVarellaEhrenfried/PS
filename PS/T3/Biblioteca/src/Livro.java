@@ -36,7 +36,7 @@ public class Livro extends Obra {
 	 * @param info 
 	 * @return
 	 */
-	public String getDados(Array info) {
+	public String getDados() {
 		// TODO implement here
 		return "";
 	}

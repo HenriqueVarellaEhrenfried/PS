@@ -12,31 +12,24 @@ public class Professor extends Usuario {
 	public Professor() {
 	}
 
-	/**
-	 * 
-	 */
 	private Integer TEMPODEV = 30;
-
-	/**
-	 * 
-	 */
 	private Integer MAXOBRAS = 3;
 
 	/**
-	 * @param senha 
-	 * @return
+	 * @param senha
+	 * @return 
 	 */
-	public String validaSenha(String senha) {
+	public boolean validaSenha(String senha) {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 	/**
 	 * @return
 	 */
-	public String validaNumeroEmprestimo() {
+	public boolean validaNumeroEmprestimo() {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 }

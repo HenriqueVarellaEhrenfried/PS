@@ -12,31 +12,24 @@ public class UsuarioGeral extends Usuario {
 	public UsuarioGeral() {
 	}
 
-	/**
-	 * 
-	 */
 	private Integer TEMPODEV = 7;
-
-	/**
-	 * 
-	 */
 	private Integer MAXOBRAS = 1;
 
 	/**
-	 * @param senha 
-	 * @return
+	 * @param senha
+	 * @return 
 	 */
-	public String validaSenha(String senha) {
+	public boolean validaSenha(String senha) {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 	/**
 	 * @return
 	 */
-	public String validaNumeroEmprestimo() {
+	public boolean validaNumeroEmprestimo() {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 }

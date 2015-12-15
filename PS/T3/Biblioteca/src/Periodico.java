@@ -12,31 +12,16 @@ public class Periodico extends Obra {
 	public Periodico() {
 	}
 
-	/**
-	 * 
-	 */
 	private String nome;
-
-	/**
-	 * 
-	 */
 	private String volume;
-
-	/**
-	 * 
-	 */
 	private String mes;
-
-	/**
-	 * 
-	 */
 	private Integer ano;
 
 	/**
 	 * @param info 
 	 * @return
 	 */
-	public String getDados(Array info) {
+	public String getDados() {
 		// TODO implement here
 		return "";
 	}

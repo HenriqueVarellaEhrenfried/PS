@@ -12,59 +12,16 @@ public class Usuario {
 	public Usuario() {
 	}
 
-	/**
-	 * 
-	 */
 	private String nome;
-
-	/**
-	 * 
-	 */
 	private String profissao;
-
-	/**
-	 * 
-	 */
 	private String nomeDeUsuario;
-
-	/**
-	 * 
-	 */
 	private String senha;
-
-	/**
-	 * 
-	 */
 	private String cpf;
-
-	/**
-	 * 
-	 */
 	private String rg;
-
-	/**
-	 * 
-	 */
 	private String telefone;
-
-	/**
-	 * 
-	 */
 	private String email;
-
-	/**
-	 * 
-	 */
 	private String idUsuario;
-
-	/**
-	 * 
-	 */
-	private Integer NumObrasEmprestadas;
-
-	/**
-	 * 
-	 */
+	private int NumObrasEmprestadas;
 	private String tipoConta;
 
 
@@ -86,17 +43,19 @@ public class Usuario {
 
 	/**
 	 * @param senha
+	 * @return 
 	 */
-	public void validaSenha(String senha) {
+	public boolean validaSenha(String senha) {
 		// TODO implement here
+		return true;
 	}
 
 	/**
 	 * @return
 	 */
-	public String validaPossibilidadeDeEmprestimo() {
+	public boolean validaPossibilidadeDeEmprestimo() {
 		// TODO implement here
-		return "";
+		return true;
 	}
 
 }
