@@ -1,23 +1,42 @@
 
-public class UsuarioGeral extends Usuario {
-	
-	int TEMPODEV = 7;
-	int MAXOBRAS = 1;
+import java.util.*;
 
-	public boolean validaSenha(String senha){
-		if (this.senha == senha)
-			return true;
-		else
-			return false;
+/**
+ * 
+ */
+public class UsuarioGeral extends Usuario {
+
+	/**
+	 * Default constructor
+	 */
+	public UsuarioGeral() {
 	}
-	
-	
-	public boolean validaNumeroEmprestimo(){
-		if (this.NumObrasEmprestadas < this.MAXOBRAS)
-			return true;
-		else
-			return false;
+
+	/**
+	 * 
+	 */
+	private Integer TEMPODEV = 7;
+
+	/**
+	 * 
+	 */
+	private Integer MAXOBRAS = 1;
+
+	/**
+	 * @param senha 
+	 * @return
+	 */
+	public String validaSenha(String senha) {
+		// TODO implement here
+		return "";
 	}
-	
-	
+
+	/**
+	 * @return
+	 */
+	public String validaNumeroEmprestimo() {
+		// TODO implement here
+		return "";
+	}
+
 }

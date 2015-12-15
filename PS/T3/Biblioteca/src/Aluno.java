@@ -1,23 +1,42 @@
 
-public class Aluno extends Usuario {
-	
-	int TEMPODEV = 15;
-	int MAXOBRAS = 2;
+import java.util.*;
 
-	public boolean validaSenha(String senha){
-		if (this.senha == senha)
-			return true;
-		else
-			return false;
+/**
+ * 
+ */
+public class Aluno extends Usuario {
+
+	/**
+	 * Default constructor
+	 */
+	public Aluno() {
 	}
-	
-	
-	public boolean validaNumeroEmprestimo(){
-		if (this.NumObrasEmprestadas < this.MAXOBRAS)
-			return true;
-		else
-			return false;
+
+	/**
+	 * 
+	 */
+	private Integer TEMPODEV = 15;
+
+	/**
+	 * 
+	 */
+	private Integer MAXOBRAS = 2;
+
+	/**
+	 * @param senha 
+	 * @return
+	 */
+	public String validaSenha(String senha) {
+		// TODO implement here
+		return "";
 	}
-	
-	
+
+	/**
+	 * @return
+	 */
+	public String validaNumeroEmprestimo() {
+		// TODO implement here
+		return "";
+	}
+
 }

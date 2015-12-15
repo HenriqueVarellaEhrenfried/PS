@@ -1,40 +1,102 @@
 
+import java.util.*;
+
+/**
+ * 
+ */
 public class Usuario {
-	String nome;
-	String profissao;
-	String nomeDeUsuario;
-	String senha;
-	String cpf;
-	String rg;
-	String telefone;
-	String email;
-	String idUsuario;
-	int NumObrasEmprestadas;
-	String tipoConta;
-	
-	public Usuario getUsuario(Usuario usuario){
-		return usuario;
+
+	/**
+	 * Default constructor
+	 */
+	public Usuario() {
 	}
-	
-	public void atualizaEmprestimo(){
-		this.NumObrasEmprestadas += 1;
+
+	/**
+	 * 
+	 */
+	private String nome;
+
+	/**
+	 * 
+	 */
+	private String profissao;
+
+	/**
+	 * 
+	 */
+	private String nomeDeUsuario;
+
+	/**
+	 * 
+	 */
+	private String senha;
+
+	/**
+	 * 
+	 */
+	private String cpf;
+
+	/**
+	 * 
+	 */
+	private String rg;
+
+	/**
+	 * 
+	 */
+	private String telefone;
+
+	/**
+	 * 
+	 */
+	private String email;
+
+	/**
+	 * 
+	 */
+	private String idUsuario;
+
+	/**
+	 * 
+	 */
+	private Integer NumObrasEmprestadas;
+
+	/**
+	 * 
+	 */
+	private String tipoConta;
+
+
+
+	/**
+	 * @return
+	 */
+	public Usuario getUser() {
+		// TODO implement here
+		return null;
 	}
-	
-	public boolean validaSenha(String senha){
-		if (this.senha == senha)
-			return true;
-		else
-			return false;
+
+	/**
+	 * 
+	 */
+	public void atualizaEmprestimo() {
+		// TODO implement here
 	}
-	
-	public String validaPossibilidadeDeEmprestimo(){
-		if (this.NumObrasEmprestadas < 3){
-			return "Este usuário consegue emprestar";
-		}
-		else{
-			return "Este usuário não consegue emprestar";
-		}
+
+	/**
+	 * @param senha
+	 */
+	public void validaSenha(String senha) {
+		// TODO implement here
 	}
-	
-	
+
+	/**
+	 * @return
+	 */
+	public String validaPossibilidadeDeEmprestimo() {
+		// TODO implement here
+		return "";
+	}
+
 }
