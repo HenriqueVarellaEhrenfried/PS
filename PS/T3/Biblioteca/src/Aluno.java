@@ -9,7 +9,10 @@ public class Aluno extends Usuario {
 	/**
 	 * Default constructor
 	 */
-	public Aluno() {
+	public Aluno(String nome, String nomeDeUsuario, String senha) {
+		setNome(nome);
+		setNomeDeUsuario(nomeDeUsuario);
+		setSenha(senha);
 	}
 
 	private int TEMPODEV = 15;

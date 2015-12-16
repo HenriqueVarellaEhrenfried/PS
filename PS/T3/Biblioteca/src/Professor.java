@@ -11,9 +11,9 @@ public class Professor extends Usuario {
 	 * Default constructor
 	 */
 	public Professor(String nome, String nomeDeUsuario, String senha) {
-		nome = nome;
-		nomeDeUsuario = nomeDeUsuario;
-		senha = senha;
+		setNome(nome);
+		setNomeDeUsuario(nomeDeUsuario);
+		setSenha(senha);
 	}
 
 	private Integer TEMPODEV = 30;

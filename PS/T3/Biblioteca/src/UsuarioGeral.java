@@ -9,7 +9,10 @@ public class UsuarioGeral extends Usuario {
 	/**
 	 * Default constructor
 	 */
-	public UsuarioGeral() {
+	public UsuarioGeral(String nome, String nomeDeUsuario, String senha) {
+		setNome(nome);
+		setNomeDeUsuario(nomeDeUsuario);
+		setSenha(senha);
 	}
 
 	private Integer TEMPODEV = 7;
