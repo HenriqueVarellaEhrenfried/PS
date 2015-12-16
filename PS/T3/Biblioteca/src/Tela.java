@@ -12,21 +12,71 @@ public class Tela {
 	public Tela() {
 	}
 
+	public final static void clearConsole(){
+		char c = '\n';
+		int length = 25;
+		char[] chars = new char[length];
+		Arrays.fill(chars, c);
+		System.out.print(String.valueOf(chars));
+	}
 
 	/**
 	 * @param telaID 
 	 * @return
 	 */
-	public String invocaTela(Integer telaID) {
-		// TODO implement here
-		return "";
+	public void invocaTela(){ 
+
+		
 	}
 
 	/**
 	 * @param telaID
 	 */
-	public void exibirTela(Integer telaID) {
-		// TODO implement here
+	public void exibirTela(List<Professor> professores, List<Aluno> alunos, List <UsuarioGeral> usuariosGeral) {
+		System.out.println("Bem vindo ao Sistema da Biblioteca");
+		System.out.println("");
+		System.out.println("1. Cadastro de Usuario");
+		System.out.println("2. Cadastro de Obras");
+		System.out.println("3. Emprestimo de Obras");
+		System.out.println("4. Devolucao de Obras");
+		System.out.println("5. Pesquisar Obra");
+		System.out.println("0. Sair");
+		
+		Scanner reader = new Scanner(System.in);  // Reading from System.in
+		System.out.println("Digite sua opcao: ");
+		int opcao = reader.nextInt(); // Scans the next token of the input as an int.
+		clearConsole();
+		
+		switch (opcao) {
+			case 1:
+				TelaCadastroUsuario telaCadastroUsuario = new TelaCadastroUsuario();
+				telaCadastroUsuario.exibirTela(professores, alunos, usuariosGeral);
+				System.out.println("Tela Cadastro de Usuario (Aluno/Ṕrofessor/UsuarioGeral)");
+				break;
+			case 2:
+				TelaCadastroObra telaCadastroObra = new TelaCadastroObra();
+				System.out.println("Telas Cadastro de Obras (Livro/Periodico)");
+				break;
+			case 3:
+				TelaEmprestimo telaEmprestimo = new TelaEmprestimo();
+				System.out.println("Tela Emprestimo de Exemplares");
+				break;
+			case 4:
+				TelaDevolucao telaDevolucao = new TelaDevolucao();
+				System.out.println("Tela Devolucao de Exemplares");
+				break;
+			case 5:
+				TelaPesquisa telaPesquisa = new TelaPesquisa();
+				System.out.println("Pesquisar Obra");
+				break;
+			case 0:
+				System.out.println("Saindo do programa...");
+				System.exit(1);
+				break;
+			default:
+				System.out.println("Ola");
+				break;
+		}
 	}
 
 	/**

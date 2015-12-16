@@ -5,11 +5,15 @@ import java.util.*;
  * 
  */
 public class Professor extends Usuario {
+	
 
 	/**
 	 * Default constructor
 	 */
-	public Professor() {
+	public Professor(String nome, String nomeDeUsuario, String senha) {
+		nome = nome;
+		nomeDeUsuario = nomeDeUsuario;
+		senha = senha;
 	}
 
 	private Integer TEMPODEV = 30;
