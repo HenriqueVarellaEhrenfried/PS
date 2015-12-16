@@ -32,7 +32,8 @@ public class Tela {
 	/**
 	 * @param telaID
 	 */
-	public void exibirTela(List<Professor> professores, List<Aluno> alunos, List <UsuarioGeral> usuariosGeral) {
+	public void exibirTela(List<Professor> professores, List<Aluno> alunos, 
+			List<UsuarioGeral> usuariosGeral, List<Livro> livros, List<Periodico> periodicos) {
 		
 		while(true){
 			System.out.println("Bem vindo ao Sistema da Biblioteca");
@@ -57,7 +58,8 @@ public class Tela {
 					break;
 				case 2:
 					System.out.println("Telas Cadastro de Obras (Livro/Periodico)");
-					TelaCadastroObra telaCadastroObra = new TelaCadastroObra();					
+					TelaCadastroObra telaCadastroObra = new TelaCadastroObra();	
+					telaCadastroObra.exibirTela(livros, periodicos);
 					break;
 				case 3:
 					System.out.println("Tela Emprestimo de Exemplares");

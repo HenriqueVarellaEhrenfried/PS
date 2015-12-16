@@ -108,7 +108,7 @@ public class Biblioteca {
 		List<Periodico> periodicos = new ArrayList<Periodico>();
 
 		Tela tela = new Tela();
-		tela.exibirTela(professores, alunos, usuariosGeral);
+		tela.exibirTela(professores, alunos, usuariosGeral, livros, periodicos);
 		
 	}
 

@@ -9,13 +9,34 @@ public class Periodico extends Obra {
 	/**
 	 * Default constructor
 	 */
-	public Periodico() {
+	public Periodico(String titulo, int volume, int mesPub, int anoPub) {
+		setTitulo(titulo);
+		setVolume(volume);
+		setMesPub(mesPub);
+		setAnoPub(anoPub);
+	}
+	
+	
+	public void setTitulo(String titulo2){
+		this.titulo = titulo2;		
+	}
+	
+	public void setAnoPub(int anoPub2) {
+		this.ano = anoPub2;		
+	}
+	
+	public void setMesPub(int mesPub2) {
+		this.mes = mes;		
 	}
 
-	private String nome;
-	private String volume;
-	private String mes;
-	private Integer ano;
+	public void setVolume(int volume2) {
+		this.volume = volume2;		
+	}
+
+	private String titulo;
+	private int volume;
+	private int mes;
+	private int ano;
 
 	/**
 	 * @param info 

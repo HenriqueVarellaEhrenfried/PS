@@ -9,27 +9,31 @@ public class Livro extends Obra {
 	/**
 	 * Default constructor
 	 */
-	public Livro() {
+	public Livro(String titulo, String nomeAutor, int anoPub) {
+		setTitulo(titulo);
+		setAutor(nomeAutor);
+		setAnoPub(anoPub);
+	}
+	
+	
+	private void setAnoPub(int anoPub2) {
+		this.anoPub = anoPub2;		
 	}
 
-	/**
-	 * 
-	 */
+
+	private void setTitulo(String titulo2) {
+		this.titulo = titulo2;		
+	}
+
+
+	private void setAutor(String autor) {
+		this.autor = autor;		
+	}
+
+
 	private String titulo;
-
-	/**
-	 * 
-	 */
 	private String autor;
-
-	/**
-	 * 
-	 */
 	private Integer anoPub;
-
-	/**
-	 * 
-	 */
 	private String editora;
 
 	/**
