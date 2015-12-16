@@ -64,6 +64,7 @@ public class Tela {
 				case 3:
 					System.out.println("Tela Emprestimo de Exemplares");
 					TelaEmprestimo telaEmprestimo = new TelaEmprestimo();	
+					telaEmprestimo.exibirTela(professores, alunos, usuariosGeral, livros, periodicos);
 					break;
 				case 4:
 					System.out.println("Tela Devolucao de Exemplares");

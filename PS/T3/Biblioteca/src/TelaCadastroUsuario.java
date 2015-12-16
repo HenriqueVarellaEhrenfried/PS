@@ -21,12 +21,13 @@ public class TelaCadastroUsuario extends Tela {
 		Scanner reader = new Scanner(System.in);  // Reading from System.in
 		System.out.println("Digite 1 para Professor, 2 para Aluno ou 3 para Usuario em Geral:");
 		int profissao = reader.nextInt(); // Scans the next token of the input as an int.
+		reader.nextLine();  // Consume newline left-over
 		System.out.println("Digite o nome da pessoa:");
-		String nome = reader.next();
+		String nome = reader.nextLine();
 		System.out.println("Digite o nome de usuario:");
-		String nomeDeUsuario = reader.next();
+		String nomeDeUsuario = reader.nextLine();
 		System.out.println("Digite a senha:");
-		String senha = reader.next();
+		String senha = reader.nextLine();
 		
 		switch (profissao){
 			case 1:

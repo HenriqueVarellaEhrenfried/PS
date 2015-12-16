@@ -21,7 +21,7 @@ public class Usuario {
 	private String telefone;
 	private String email;
 	private String idUsuario;
-	private int NumObrasEmprestadas;
+	private int obrasEmprestadas = 0;
 	private String tipoConta;
 
 

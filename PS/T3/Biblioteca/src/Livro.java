@@ -45,4 +45,9 @@ public class Livro extends Obra {
 		return "";
 	}
 
+
+	public String getTitulo() {
+		return titulo;
+	}
+
 }

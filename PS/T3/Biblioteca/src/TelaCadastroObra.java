@@ -22,11 +22,12 @@ public class TelaCadastroObra extends Tela {
 		Scanner reader = new Scanner(System.in);  // Reading from System.in
 		System.out.println("Digite 1 para Livro ou 2 para Periodico:");
 		int tipoObra = reader.nextInt(); // Scans the next token of the input as an int.
+		reader.nextLine();  // Consume newline left-over
 		System.out.println("Digite o titulo:");
-		String titulo = reader.next();
+		String titulo = reader.nextLine();
 		if (tipoObra == 1){
 			System.out.println("Digite o nome do autor:");
-			String autor = reader.next();
+			String autor = reader.nextLine();
 			System.out.println("Digite o ano de publicacao:");
 			int anoPub = reader.nextInt();
 			
