@@ -38,9 +38,12 @@ public class Emprestimo {
 	private int obraID;
 	private int tipoObra;
 
-	public String devolve(String id) {
-		// TODO implement here
-		return "";
+	public void devolve(int tipoObra, int obraID, int tipoUsuario, int usuarioID) {
+		switch (tipoUsuario){
+			case 1:
+				//professores.get(usuarioID).emprestimos.get()
+				// TODO: Complete this method. Add lists to the param list
+		}
 	}
 
 
@@ -52,5 +55,17 @@ public class Emprestimo {
 	public int getUsuarioID(){
 		return this.usuarioID;
 	}
-
+	
+	public int getObraID(){
+		return this.obraID;
+	}
+	
+	public int getTipoObra(){
+		return this.tipoObra;
+	}
+	
+	public int getDataEsperadaDevolucao(){
+		return this.dataEsperadaDevolucao;
+	}
+	
 }
