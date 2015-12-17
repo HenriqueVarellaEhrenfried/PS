@@ -44,7 +44,12 @@ public class Periodico extends Obra {
 	 */
 	public String getDados() {
 		// TODO implement here
-		return "";
+		return titulo+" "+String.valueOf(volume)+" "+String.valueOf(mes)+" "+String.valueOf(ano);
+	}
+	
+	public String getTitulo()
+	{
+		return titulo;
 	}
 
 }

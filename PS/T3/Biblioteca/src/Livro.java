@@ -42,7 +42,7 @@ public class Livro extends Obra {
 	 */
 	public String getDados() {
 		// TODO implement here
-		return "";
+		return titulo+" "+autor+" "+String.valueOf(anoPub)+" "+editora;
 	}
 
 
