@@ -42,6 +42,7 @@ public class Usuario {
 	public void atualizaEmprestimo(int tipoObra, int obraID, int tipoUsuario, int usuarioID) {
 		Emprestimo emprestimoCriado = new Emprestimo(tipoObra, obraID, tipoUsuario, usuarioID);
 		this.emprestimos.add(emprestimoCriado);
+		this.obrasEmprestadas++;
 	}
 
 	/**
@@ -57,7 +58,7 @@ public class Usuario {
 	 * @return
 	 */
 	public boolean validaPossibilidadeDeEmprestimo() {
-		if (this.obrasEmprestadas >= this.MAXOBRAS)
+		if (this.obrasEmprestadas < this.MAXOBRAS)
 			return true;
 		else
 			return false;
