@@ -23,22 +23,25 @@ public class Usuario {
 	private String idUsuario;
 	private int obrasEmprestadas = 0;
 	private String tipoConta;
+	private int MAXOBRAS;
+	private int TEMPODEV;
 
+	private List<Emprestimo> emprestimos = new ArrayList<Emprestimo>();
 
 
 	/**
 	 * @return
 	 */
 	public Usuario getUser() {
-		// TODO implement here
 		return null;
 	}
 
 	/**
 	 * 
 	 */
-	public void atualizaEmprestimo() {
-		// TODO implement here
+	public void atualizaEmprestimo(int tipoObra, int obraID, int tipoUsuario, int usuarioID) {
+		Emprestimo emprestimoCriado = new Emprestimo(tipoObra, obraID, tipoUsuario, usuarioID);
+		this.emprestimos.add(emprestimoCriado);
 	}
 
 	/**
@@ -54,8 +57,10 @@ public class Usuario {
 	 * @return
 	 */
 	public boolean validaPossibilidadeDeEmprestimo() {
-		// TODO implement here
-		return true;
+		if (this.obrasEmprestadas >= this.MAXOBRAS)
+			return true;
+		else
+			return false;
 	}
 
 	public String getNome() {

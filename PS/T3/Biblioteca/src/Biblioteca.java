@@ -110,6 +110,8 @@ public class Biblioteca {
 		Tela tela = new Tela();
 		tela.exibirTela(professores, alunos, usuariosGeral, livros, periodicos);
 		
+
+		
 	}
 
 }

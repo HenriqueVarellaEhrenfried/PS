@@ -25,12 +25,9 @@ public class TelaEmprestimo extends Tela {
 		switch(tipoUsuario)
 		{
 			case 1:
-				for ( int i=0;i<professores.size();++i )
-				{
-					if ( professores.get(i).getNome()==nomeUsuario )
-					{
-						if ( professores.get(i).validaPossibilidadeDeEmprestimo() )
-						{
+				for ( int i=0;i<professores.size();++i ){
+					if ( professores.get(i).getNomeDeUsuario().equals(nomeUsuario) ){
+						if ( professores.get(i).validaPossibilidadeDeEmprestimo() ){
 							professores.get(i).atualizaEmprestimo(tipoObra, id, tipoUsuario, i);
 						}
 						else System.out.println("Este usuário não pode emprestar mais exemplares.");
@@ -39,12 +36,9 @@ public class TelaEmprestimo extends Tela {
 				break;
 				
 			case 2:
-				for ( int i=0;i<alunos.size();++i )
-				{
-					if ( alunos.get(i).getNome()==nomeUsuario )
-					{
-						if ( alunos.get(i).validaPossibilidadeDeEmprestimo() )
-						{
+				for ( int i=0;i<alunos.size();++i ){
+					if ( alunos.get(i).getNomeDeUsuario().equals(nomeUsuario) ){
+						if ( alunos.get(i).validaPossibilidadeDeEmprestimo() ){
 							alunos.get(i).atualizaEmprestimo(tipoObra, id, tipoUsuario, i);
 						}
 						else System.out.println("Este usuário não pode emprestar mais exemplares.");
@@ -53,13 +47,10 @@ public class TelaEmprestimo extends Tela {
 				break;
 				
 			case 3:
-				for ( int i=0;i<usuariosGeral.size();++i )
-				{
-					if ( usuariosGeral.get(i).getNome()==nomeUsuario )
-					{
-						if ( usuariosGeral.get(i).validaPossibilidadeDeEmprestimo() )
-						{
-							usuariosGeral.get(i).atualizaEmprestimo(tipoObra, tipoUsuario, id);
+				for ( int i=0;i<usuariosGeral.size();++i ){
+					if ( usuariosGeral.get(i).getNomeDeUsuario().equals(nomeUsuario) ){
+						if ( usuariosGeral.get(i).validaPossibilidadeDeEmprestimo() ){
+							usuariosGeral.get(i).atualizaEmprestimo(tipoObra, id, tipoUsuario, i);
 						}
 						else System.out.println("Este usuário não pode emprestar mais exemplares.");
 					}

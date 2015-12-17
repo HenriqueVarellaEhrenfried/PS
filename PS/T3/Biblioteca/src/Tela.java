@@ -73,6 +73,7 @@ public class Tela {
 				case 5:
 					System.out.println("Pesquisar Obra");
 					TelaPesquisa telaPesquisa = new TelaPesquisa();
+					telaPesquisa.exibirTela(livros, periodicos);
 					break;
 				case 0:
 					System.out.println("Saindo do programa...");
@@ -82,6 +83,9 @@ public class Tela {
 					System.out.println("Entrada invalida");
 					break;
 			}
+			System.out.println("\nPressione enter para continuar...");
+			reader.nextLine();
+			reader.nextLine();
 			clearConsole();
 		}
 	}

@@ -46,6 +46,10 @@ public class TelaPesquisa extends Tela {
 			System.out.println(periodicos.get(periodicoId).getDados());		
 		}
 		else System.out.println("Entrada inválida.");	
+		
+		System.out.println("\nPressione enter para continuar...");
+		reader.nextLine();
+		reader.nextLine();
 	}
 
 	/**
