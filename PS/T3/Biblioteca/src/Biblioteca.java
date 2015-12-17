@@ -24,6 +24,18 @@ public class Biblioteca {
 
 
 
+	private static void inicializaSistema(List <Professor> professores, List <Aluno> alunos, List <UsuarioGeral> usuariosGeral, List <Livro> livros, List <Periodico> periodicos)
+	{
+		for (int i=0;i<10;++i)
+		{
+			livros.add(new Livro("livro"+String.valueOf(i), "William Shakespeare "+String.valueOf(i), 1900+10*i));
+			periodicos.add(new Periodico("Pesquisa "+String.valueOf(i), i, i+1, 1900+10*i));
+			professores.add(new Professor("Andrey "+String.valueOf(i), "andrey"+String.valueOf(i), "andrey"+String.valueOf(i)+"senha"));
+			alunos.add(new Aluno("Joao "+String.valueOf(i), "joao"+String.valueOf(i), "joao"+String.valueOf(i)+"senha"));
+			usuariosGeral.add(new UsuarioGeral("Bob "+String.valueOf(i), "bob"+String.valueOf(i), "bob"+String.valueOf(i)+"senha"));
+		}	
+	}
+	
 
 	/**
 	 * @param telaID
@@ -106,12 +118,11 @@ public class Biblioteca {
 		List<UsuarioGeral> usuariosGeral = new ArrayList<UsuarioGeral>();
 		List<Livro> livros = new ArrayList<Livro>();
 		List<Periodico> periodicos = new ArrayList<Periodico>();
+		
+		inicializaSistema(professores,alunos,usuariosGeral,livros,periodicos);
 
 		Tela tela = new Tela();
 		tela.exibirTela(professores, alunos, usuariosGeral, livros, periodicos);
-		
-
-		
 	}
 
 }
