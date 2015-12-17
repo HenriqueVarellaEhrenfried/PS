@@ -18,6 +18,13 @@ public class UsuarioGeral extends Usuario {
 	private Integer TEMPODEV = 7;
 	private Integer MAXOBRAS = 1;
 
+	public List<Emprestimo> emprestimos = new ArrayList<Emprestimo>();
+	
+	public void atualizaEmprestimo(int tipoObra, int obraID, int tipoUsuario, int usuarioID) {
+		Emprestimo emprestimoCriado = new Emprestimo(tipoObra, obraID, tipoUsuario, usuarioID);
+		this.emprestimos.add(emprestimoCriado);
+	}	
+	
 	/**
 	 * @param senha
 	 * @return 

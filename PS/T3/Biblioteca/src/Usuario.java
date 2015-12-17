@@ -42,6 +42,7 @@ public class Usuario {
 	public void atualizaEmprestimo(int tipoObra, int obraID, int tipoUsuario, int usuarioID) {
 		Emprestimo emprestimoCriado = new Emprestimo(tipoObra, obraID, tipoUsuario, usuarioID);
 		this.emprestimos.add(emprestimoCriado);
+		this.obrasEmprestadas++;
 	}
 
 	/**
@@ -59,7 +60,7 @@ public class Usuario {
 	public boolean validaPossibilidadeDeEmprestimo() {
 		Calendar calendar = Calendar.getInstance();
 		int hoje = calendar.get(Calendar.DAY_OF_YEAR);
-		if (this.obrasEmprestadas >= this.MAXOBRAS) {
+		if (this.obrasEmprestadas < this.MAXOBRAS) {
 			for (int i = 0; i < this.emprestimos.size(); i++){
 				if (this.emprestimos.get(i).getDataEsperadaDevolucao() < hoje){
 					return false;
@@ -67,9 +68,8 @@ public class Usuario {
 			}
 			return true;
 		}
-		else{
+		else
 			return false;
-		}
 	}
 
 	public String getNome() {
